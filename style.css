@@ -9,20 +9,89 @@
  --azulverde: hsl(158, 36%, 37%);
 --creme: hsl(30, 38%, 92%);
 --azulescuro: hsl(212, 21%, 14%);
---lilas: hsl(228, 12%, 48%);
+--cinza: hsl(228, 12%, 48%);
 --branco: hsl(0, 0%, 100%);
 }
 body{
     background-color: var(--creme);
-    min-height: 100vh;
 }
 main{
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 97vh;
 
 }
 img{
-    background-color: var(--branco);
-    padding: 0px 400px 0px 0px;
-    border-radius: 20px;
+    border-start-start-radius: 20px;
+    border-end-start-radius: 20px;
+}
 
+.ladoperfum{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--branco); 
+    padding:0px 30px 0px 20px;
+    border-start-end-radius: 20px;
+    border-end-end-radius: 20px;
+}
+
+.letras{
+    text-align: left;
+}
+
+h1{
+    font-family: 'Fraunces', Arial, sans-serif;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.valor
+{
+    color: var(--azulverde);
+}
+
+.antigovalor{
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: var(--cinza);
+    font-size: small;
+    text-decoration: line-through;
+    text-align: left;
+}
+
+.valores{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+
+}
+
+h3{
+    display: flex;
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: var(--cinza);
+    font-size: small;
+    margin:  20px 0px;
+}
+p{
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: var(--cinza);
+    line-height: 25px;
+}
+a{
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: small;
+    color: var(--branco);
+    background-color: var(--azulverde);
+    margin: 20px 0px;
+    padding: 20px 70px ;
+    border-radius: 10px;
+    text-decoration: none;
+}
+a:hover{
+    background-color: rgb(52, 87, 18);
 }
